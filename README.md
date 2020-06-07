@@ -10,4 +10,4 @@ In the project directory, you can run:
 
 run in local server
 run on port 8080<br />
-Open [http://localhost:8080/index.html-) to view it in the browser.
+Open [http://localhost:8080/index.html) to view it in the browser.
