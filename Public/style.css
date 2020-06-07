@@ -8,7 +8,7 @@ body button {
     border: 1px solid bisque;
 }
 
-body #animateBox {
+body .animateBox {
     height:100px;
     width:100px;
     padding:5px; 
@@ -16,7 +16,25 @@ body #animateBox {
     background-color:bisque;
     border:1px solid beige;
 }
+body #animateBoxWithCss.animateBox.animate {
+    animation-name: move;
+    animation-duration: 2s;
+}
 
-body #animateBoxWithCss {
-    
+@keyframes move {
+    from { transform : translateX(0) }
+    17%  { transform : translateX(0%) }
+    20%  { transform : translateX(20%) }
+    37%  { transform : translateX(20%) }
+    40%  { transform : translateX(40%) }
+    57%  { transform : translateX(40%) }
+    60%  { transform : translateX(60%) }
+    77%  { transform : translateX(60%) }
+    80%  { transform : translateX(80%) }
+    97%  { transform : translateX(80%) }
+    to   { transform : translateX(100%) }
+ }
+
+body .loader.hidden {
+    visibility: hidden;
 }

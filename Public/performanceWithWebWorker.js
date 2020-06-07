@@ -44,6 +44,8 @@ const performance = (function() {
 		console.log('Start calculation - JS Backround Frame (web worker)....');
 		workerFor.postMessage(null); // we don't need payload here
 
+		alert("finish JS Main Frame - not wait for web worker background thread");
+
 	};
 
 	function loadResultWithMainThrade() {
@@ -64,6 +66,8 @@ const performance = (function() {
 			seconds_passed = (new_time - old_time)/1000; //in sec
 			console.log('seconds_passed:' + seconds_passed);
 			tatalTimeContainer.innerText  = seconds_passed;
+
+			alert("finish JS Main Frame - wait for finish calculation");
 		},0);
 	};
 

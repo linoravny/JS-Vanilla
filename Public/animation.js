@@ -3,6 +3,7 @@
 const animation = (function() {	
 	let start, myReq;
 	const boxElement = document.getElementById('animateBox'); 
+	const boxElementCss = document.getElementById('animateBoxWithCss');
 	
 	function animateBoxWithAnimationFrame() {
 		myReq = window.requestAnimationFrame(boxMove);
@@ -24,9 +25,18 @@ const animation = (function() {
 		}
 	}
 
+	function animateBoxWithCss(){
+		if (boxElementCss.classList.contains("animate")) {
+			boxElementCss.classList.remove("animate");
+		} else {
+			boxElementCss.classList.add("animate");
+		}
+	}
+
 	// public API
 	return {
-		animateBoxWithAnimationFrame: animateBoxWithAnimationFrame
+		animateBoxWithAnimationFrame: animateBoxWithAnimationFrame,
+		animateBoxWithCss: animateBoxWithCss
 	}
 
 })();

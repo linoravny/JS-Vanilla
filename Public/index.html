@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>JS Vanilla</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
 
   <!-- performance With We bWorker -->
+  <h1>WEB WORKER</h1>
   <div class="performanceWithWebWorker">
     <button onclick="performance.loadResultWithMainThrade()">Load Result With JS</button>
     <button onclick="performance.loadResultWithWebWorker()">Load Result With Backround Thrade</button>
@@ -19,18 +21,25 @@
   <!--END performance With We bWorker -->
   
   <!-- Animation -->
-  <div id="animateBox" 
+  <h1>ANIMATION</h1>
+  <div id="animateBox" class="animateBox" 
      onclick="animation.animateBoxWithAnimationFrame()">
      click for animate with animation frame
   </div>
-  <div id="animateBoxWithCss">
+  <div id="animateBoxWithCss" class="animateBox" onclick="animation.animateBoxWithCss()">
     click for animate with css
   </div>
   <!-- END Animation -->  
 
   <!-- Dom Manipolation -->
+  <h1>DOM</h1>
   <button onclick="domJS.showList()">show list with vanilla JS</button>
   <button onclick="domJS.resetList()">delete list with vanilla JS</button>
+
+  <button onclick="domJS.addOddClassName()">add odd class name</button>
+  <button onclick="domJS.addOddClassList()">add odd class list</button>
+
+  <div class="loader hidden">Loading...</div>
   <div id="domContainer"></div>
   <!-- END Dom Manipolation -->  
 
