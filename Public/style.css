@@ -1,0 +1,22 @@
+body {
+    padding: 15px;
+}
+body button {
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    border: 1px solid bisque;
+}
+
+body #animateBox {
+    height:100px;
+    width:100px;
+    padding:5px; 
+    margin: 10px;
+    background-color:bisque;
+    border:1px solid beige;
+}
+
+body #animateBoxWithCss {
+    
+}

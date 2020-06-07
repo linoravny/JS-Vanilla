@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>JS Vanilla</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
 
@@ -17,20 +19,25 @@
   <!--END performance With We bWorker -->
   
   <!-- Animation -->
-  <!-- <div id="animateBox" 
-    style="height:100px;width:100px;padding:5px; background-color:red;border:1px solid green;" 
-    onclick="animateBox()">click for anumate</div> -->
+  <div id="animateBox" 
+     onclick="animation.animateBoxWithAnimationFrame()">
+     click for animate with animation frame
+  </div>
+  <div id="animateBoxWithCss">
+    click for animate with css
+  </div>
   <!-- END Animation -->  
 
   <!-- Dom Manipolation -->
-
+  <button onclick="domJS.showList()">show list with vanilla JS</button>
+  <button onclick="domJS.resetList()">delete list with vanilla JS</button>
+  <div id="domContainer"></div>
   <!-- END Dom Manipolation -->  
-
 
 	<!-- Load our React component. -->
   <script src="performanceWithWebWorker.js"></script>
-  <!-- <script src="domManipolation.js"></script>
-  <script src="animation.js"></script> -->
+  <script src="domManipolation.js"></script>
+  <script src="animation.js"></script>
 
   </body>
 </html>
